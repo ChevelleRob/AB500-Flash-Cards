@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Allen-Bradley SLC 500 Flash Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .flashcard {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      margin: 20px auto;
+      max-width: 600px;
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+    .question {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    .answer {
+      display: none;
+      margin-top: 10px;
+      background: #e0ffe0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    button {
+      padding: 8px 12px;
+      background: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Allen-Bradley SLC 500 Flash Cards</h1>
+
+<div class="flashcard">
+  <div class="question">
+    1) What software is commonly used to program Allen-Bradley SLC 500 PLCs?<br>
+    A) RSLogix 500<br>
+    B) Studio 5000<br>
+    C) Connected Components Workbench<br>
+    D) TIA Portal
+  </div>
+  <button onclick="toggleAnswer(this)">Show Answer</button>
+  <div class="answer">✅ Answer: A) RSLogix 500</div>
+</div>
+
+<div class="flashcard">
+  <div class="question">
+    2) Which SLC 500 CPU supports Ethernet communications natively?<br>
+    A) SLC 5/03<br>
+    B) SLC 5/04<br>
+    C) SLC 5/05<br>
+    D) SLC 5/01
+  </div>
+  <button onclick="toggleAnswer(this)">Show Answer</button>
+  <div class="answer">✅ Answer: C) SLC 5/05</div>
+</div>
+
+<div class="flashcard">
+  <div class="question">
+    3) What communication port type is standard on SLC 5/04?<br>
+    A) DH-485<br>
+    B) DF1<br>
+    C) Ethernet<br>
+    D) DH+
+  </div>
+  <button onclick="toggleAnswer(this)">Show Answer</button>
+  <div class="answer">✅ Answer: D) DH+</div>
+</div>
+
+<div class="flashcard">
+  <div class="question">
+    4) What is the maximum number of I/O modules in an SLC 500 rack?<br>
+    A) 5<br>
+    B) 7<br>
+    C) 10<br>
+    D) 30
+  </div>
+  <button onclick="toggleAnswer(this)">Show Answer</button>
+  <div class="answer">✅ Answer: C) 10</div>
+</div>
+
+<div class="flashcard">
+  <div class="question">
+    5) Which instruction in RSLogix 500 is used to move data from one location to another?<br>
+    A) ADD<br>
+    B) MOV<br>
+    C) TON<br>
+    D) CPT
+  </div>
+  <button onclick="toggleAnswer(this)">Show Answer</button>
+  <div class="answer">✅ Answer: B) MOV</div>
+</div>
+
+<div class="flashcard">
+  <div class="question">
+    6) In RSLogix 500, what file number is usually the Data File for timers?<br>
+    A) B3<br>
+    B) T4<br>
+    C) N7<br>
+    D) F8
+  </div>
+  <button onclick="toggleAnswer(this)">Show Answer</button>
+  <div class="answer">✅ Answer: B) T4</div>
+</div>
+
+<div class="flashcard">
+  <div class="question">
+    7) What does DH-485 stand for?<br>
+    A) Device Highway 485<br>
+    B) Data Highway 485<br>
+    C) Distributed Highway 485<br>
+    D) Device Hub 485
+  </div>
+  <button onclick="toggleAnswer(this)">Show Answer</button>
+  <div class="answer">✅ Answer: B) Data Highway 485</div>
+</div>
+
+<div class="flashcard">
+  <div class="question">
+    8) What is the purpose of the SLC 500 “Keyswitch”?<br>
+    A) Enables memory expansion<br>
+    B) Selects program/run/test modes<br>
+    C) Controls power to I/O modules<br>
+    D) Changes IP address
+  </div>
+  <button onclick="toggleAnswer(this)">Show Answer</button>
+  <div class="answer">✅ Answer: B) Selects program/run/test modes</div>
+</div>
+
+<div class="flashcard">
+  <div class="question">
+    9) What is the typical voltage for SLC 500 discrete inputs?<br>
+    A) 3VDC<br>
+    B) 24VDC or 120VAC<br>
+    C) 480VAC<br>
+    D) 12VDC only
+  </div>
+  <button onclick="toggleAnswer(this)">Show Answer</button>
+  <div class="answer">✅ Answer: B) 24VDC or 120VAC</div>
+</div>
+
+<div class="flashcard">
+  <div class="question">
+    10) What is the RS-232 port typically labeled on an SLC 5/03 CPU?<br>
+    A) Channel 0<br>
+    B) Channel 1<br>
+    C) Ethernet Port<br>
+    D) DH+ Port
+  </div>
+  <button onclick="toggleAnswer(this)">Show Answer</button>
+  <div class="answer">✅ Answer: A) Channel 0</div>
+</div>
+
+<script>
+  function toggleAnswer(button) {
+    const answer = button.nextElementSibling;
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+      button.textContent = "Show Answer";
+    } else {
+      answer.style.display = "block";
+      button.textContent = "Hide Answer";
+    }
+  }
+</script>
+
+</body>
+</html>
